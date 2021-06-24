@@ -5,15 +5,15 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: helloworld
+    app: hello
   template:
     metadata:
       labels:
-        app: helloworld
+        app: hello
     spec:
       containers:
       - name: k8s-demo
         image: arjunachari12/k8s-demo
         ports:
         - name: java-port
-          containerPort: 80
+          containerPort: 3000
